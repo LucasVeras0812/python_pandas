@@ -65,3 +65,10 @@ df3 = pd.DataFrame({
 meltado = pd.melt(df3, id_vars=['Produto'], var_name='Mês', value_name='Vendas')
 print(meltado)
 print()
+
+#apply() e map() — Aplicar funções linha a linha
+
+#com apply()
+df['Total'] = df.apply(lambda linha: linha['Preço'] * linha['Quantidade'], axis=1)
+
+df['Produto'] = df['Produto'].map(lambda x: x.upper()) # deixa em maiúsculas
