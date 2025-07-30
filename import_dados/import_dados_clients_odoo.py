@@ -10,11 +10,11 @@ base_path = os.path.dirname(__file__)
 file_path = os.path.join(base_path, 'contatos_v18_parciais.xlsx')
 v18 = pd.read_excel(file_path)
 
-# limpar espaços e padronizar nomes de colunas
+# limpar espaços em branco no início e no fim dos nomes das colunas
 v13.columns = v13.columns.str.strip()
 v18.columns = v18.columns.str.strip()
 
-# renomear para garantir correspondência na chave de junção
+# renomear para garantir nome da coluna igual
 v18.rename(columns={'ID externo': 'ID Externo'}, inplace=True)
 
 # fazer o merge
