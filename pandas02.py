@@ -5,6 +5,7 @@ dado = {
     'Preço': [12.5, 3.4, 89.9],
     'Quantidade': [10, 50, 5]
 }
+dado = pd.DataFrame(dado)
 
 print(dado.head()) # mostra as primeiras 5 linhas(padrão)
 
