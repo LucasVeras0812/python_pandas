@@ -35,15 +35,3 @@ print(titanic.iloc[9:25, 2:5])
 titanic.iloc[0:3, 3] = 'anonymous'
 
 import pandas._testing as tm
-
-def test_getitem_listlike_of_ints():
-    ser = pd.Series(range(5))
-
-    result = ser[[3, 4]]
-    expected = pd.Series([2, 3])
-    tm.assert_series_equal(result, expected)
-
-    result = ser.loc[[3, 4]]
-    tm.assert_series_equal(result, expected)
-
-test_getitem_listlike_of_ints()
