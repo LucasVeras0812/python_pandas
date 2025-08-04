@@ -33,5 +33,3 @@ print(adult_names.head())
 print(titanic.iloc[9:25, 2:5])
 
 titanic.iloc[0:3, 3] = 'anonymous'
-
-import pandas._testing as tm
