@@ -3,6 +3,7 @@ import os
 
 # ler os dois arquivos
 base_path = os.path.dirname(__file__)
+
 file_path = os.path.join(base_path, 'contatos_v13_completos.xlsx')
 v13 = pd.read_excel(file_path)
 
