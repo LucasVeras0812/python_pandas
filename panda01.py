@@ -5,6 +5,7 @@ serie = pd.Series(dados)
 
 print(serie)
 
+
 dados = {
     'Nome': ['Lucas', 'Maria', 'João'],
     'Idade': [21, 10, 23],
