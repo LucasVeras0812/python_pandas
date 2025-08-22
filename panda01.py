@@ -12,6 +12,7 @@ dados = {
     'Cidade': ['Santa Catarina', 'Rio de Janeiro', 'São Paulo']
 }
 
+
 df = pd.DataFrame(dados)
 print(df)
 
