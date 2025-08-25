@@ -13,6 +13,7 @@ dados = {
 }
 
 
+
 df = pd.DataFrame(dados)
 print(df)
 
