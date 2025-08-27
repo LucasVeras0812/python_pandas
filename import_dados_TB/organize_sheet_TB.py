@@ -26,5 +26,4 @@ resultado[['TB_oui', 'TB_valido', 'TB_nao_encontrado']] = resultado.apply(
     organizar_linha, axis=1, oui_tbs_ativos=oui_tbs_ativos
 )
 
-# Salva o resultado organizado
 resultado.to_excel('conferencia_tbs_organizada.xlsx', index=False)
